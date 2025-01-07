@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Availability and Passenger Requests</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Availability and Passenger Requests</h1>
+    </header>
+    <div class="container">
+        <h2>Find Available Buses</h2>
+        <div class="form-group">
+            <label for="source">Source</label>
+            <input type="text" id="source" placeholder="Enter source location">
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" placeholder="Enter destination location">
+        </div>
+        <button onclick="searchBuses()">Search Buses</button>
+
+        <div id="busList" class="bus-list"></div>
+
+        <h2>Request a Bus</h2>
+        <div class="form-group">
+            <label for="passengerSource">Your Source</label>
+            <input type="text" id="passengerSource" placeholder="Enter your source location">
+        </div>
+        <div class="form-group">
+            <label for="passengerDestination">Your Destination</label>
+            <input type="text" id="passengerDestination" placeholder="Enter your destination">
+        </div>
+        <button onclick="requestBus()">Submit Request</button>
+
+        <h2>Live Requests</h2>
+        <div id="liveRequests" class="bus-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
